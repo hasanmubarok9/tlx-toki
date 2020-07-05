@@ -3,7 +3,7 @@ B = input()
 
 def checkIsAble(A, B):
 
-    if len(A) - len(B) > 1:
+    if len(A) - len(B) > 1 or len(A) == len(B) or len(B) > len(A):
         return "Wah, tidak bisa :("
 
     listA = list(A)
