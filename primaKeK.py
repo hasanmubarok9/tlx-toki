@@ -10,6 +10,14 @@ def siveOfErathostenes(n):
                 j += i
     return primeList
 
+
 if __name__ == "__main__": 
-    n = int(input())
-    print(siveOfErathostenes(n))
+    T = int(input())
+    k = []
+    for _ in range(T):
+        k.append(int(input()))
+
+    primes = siveOfErathostenes(1000000)
+
+    for i in k:
+        print(primes[i-1])
