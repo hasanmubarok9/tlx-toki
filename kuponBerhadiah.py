@@ -7,4 +7,4 @@ def kuponBerhadiah(x, coupons):
 if __name__ == "__main__": 
     N, X = map(int, input().split())
     coupons = list(map(int, input().split()))
-    print(kuponBerhadiah(X, coupons))
+    print(kuponBerhadiah(X, sorted(coupons)))
