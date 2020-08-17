@@ -11,13 +11,8 @@ def countingSort(arr):
     index = 0
     for i in range(rangeValue):
         for _ in range(ftable[i]):
-            print("nilai i ", i)
-            print("nilai arr sebelum", arr)
-            print("nilai index sebelum", index)
             arr[index] = i
             index += 1
-            print("nilai index sesudah", index)
-            print("nilai arr sesudah", arr)
 
     return arr
 
