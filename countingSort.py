@@ -13,6 +13,7 @@ def countingSort(arr):
         for _ in range(ftable[i]):
             arr[index] = i
             index += 1
+        print("arr ", arr)
 
     return arr
 
