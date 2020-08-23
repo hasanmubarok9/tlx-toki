@@ -2,6 +2,7 @@ def insertionSort(arr):
     n = len(arr)
     for i in range(n):
         pos = i
+        print("nilai pos inisial ", pos)
         while ((pos > 0) and (arr[pos] < arr[pos-1])):
             arr[pos], arr[pos-1] = arr[pos-1], arr[pos]
             print("nilai i ", i)
