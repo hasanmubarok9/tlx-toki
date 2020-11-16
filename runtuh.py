@@ -6,6 +6,7 @@ def runtuh(building):
     R = len(building)
     C = len(building[0])
 
+    # finding base
     base = 0
     for i in range(R):
         # remove full row
@@ -13,6 +14,7 @@ def runtuh(building):
             building[i] = ["0"]*C 
             base = i
 
+    # iterate over column
     for j in range(C):
         k = 0
         sumOne = 0
