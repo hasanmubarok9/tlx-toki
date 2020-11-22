@@ -114,13 +114,14 @@ if __name__ == "__main__":
     allPossibleSetIndexPicked = lookingForTheBiggest(m, n, matrices)
 
     allMax = []
-
+    
     for collection in allPossibleSetIndexPicked:
         newMatrix = [row[:] for row in matrices]
 
         # value for the first attempt
         val = len(collection)
         firstValue = val * (val - 1)
+
 
         # modify to .
         for a, b in collection:
@@ -132,7 +133,6 @@ if __name__ == "__main__":
         # looking for all possible set of index picked after first demolished
         allPossibleSetIndexPickedAfterDemolished = lookingForTheBiggest(m, n, newMatrix)
 
-        # print("allPossibleSetIndexPickedAfterDemolished ", allPossibleSetIndexPickedAfterDemolished)
 
         secondValue = 0
 
@@ -143,7 +143,9 @@ if __name__ == "__main__":
         allMax.append(firstValue + secondValue)
 
 
-        
-    print(max(allMax))
+    if (len(allMax) > 0):
+        print(max(allMax))
+    else:
+        print(0)
 
 
