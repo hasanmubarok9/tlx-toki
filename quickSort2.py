@@ -1,8 +1,5 @@
 # this code is copied from book pemrograman kompetitif
 def quickSort(arr, left, right):
-    # print("left ", left)
-    # print("right ", right)
-    # print("partisi arr[left:right+1] ", arr[left:right+1])
     if (left >= right):
         return
     else:
@@ -11,10 +8,7 @@ def quickSort(arr, left, right):
         pLeft = left
         pRight = right
 
-        print("pivot ", pivot)
-
         while pLeft <= pRight:
-            print("arr selama pengacakan ", arr)
 
             # gerakkan pleft ke kanan sampai ditemui arr[pLeft] yang >= pivot
             while arr[pLeft] < pivot:
@@ -29,13 +23,6 @@ def quickSort(arr, left, right):
                 arr[pLeft], arr[pRight] = arr[pRight], arr[pLeft]
                 pLeft += 1
                 pRight -= 1
-        # print("arr ", arr)
-        # print("left ", left)
-        # print("pRight ", pRight)
-        # print("pLeft ", pLeft)
-        # print("right ", right)
-        # print("partisi arr[left:pRight+1] ", arr[left:pRight+1])
-        # print("partisi arr[pLeft:right+1] ", arr[pLeft:right+1])
         quickSort(arr, left, pRight)
         quickSort(arr, pLeft, right)
 
@@ -43,7 +30,8 @@ def quickSort(arr, left, right):
 # arr = [10, 7, 8, 9, 1, 5]
 # arr = [10, 30, 80, 90, 40, 50, 70]
 # arr = [4, 3, 2, 1]
-arr = [2, 5, 7, 4, 6, 1, 3, 8, 9]
+# arr = [2, 5, 7, 4, 6, 1, 3, 8, 9]
+arr = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 print("arr before sorted ", arr)
 quickSort(arr, 0, len(arr) - 1)
 print("arr after sorted ", arr)
