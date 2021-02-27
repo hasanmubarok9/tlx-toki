@@ -1,2 +1,3 @@
-*.plist
-*.dSYM
+*
+!*.cpp
+!*.py
