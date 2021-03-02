@@ -1,4 +1,3 @@
-# greaterThanSixDigit
 def findPower(a, b):
     mod = 1000000
     if b == 1:
