@@ -20,8 +20,7 @@ int main()
     }
 
     double l = 0;
-    // double r = 2e9;
-    double r = 100;
+    double r = 2e9;
     double ans = r;
 
     while (r - l >= EPS)
