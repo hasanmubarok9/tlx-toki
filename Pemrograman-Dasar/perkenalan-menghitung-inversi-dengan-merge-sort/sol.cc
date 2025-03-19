@@ -2,9 +2,10 @@
 
 using namespace std;
 
-void merge(vector<int> &arr, int left, int mid, int right) {
+long long merge(vector<int> &arr, int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
+    long long inversions = 0;
 
     int left_array[n1];
     int right_array[n2];
@@ -24,6 +25,7 @@ void merge(vector<int> &arr, int left, int mid, int right) {
             arr[k] = left_array[i];
             i++;
         } else {
+            inversions += (n1 - i);
             arr[k] = right_array[j];
             j++;
         }
@@ -41,17 +43,22 @@ void merge(vector<int> &arr, int left, int mid, int right) {
         j++;
         k++;
     }
+    
+    return inversions;
 }
 
-void mergeSort(vector<int> &arr, int left, int right) {
-    if (left >= right) {
-        return;
+long long mergeSort(vector<int> &arr, int left, int right) {
+    long long inversions = 0;
+    if (left < right) {
+        int mid = (left + right) >> 1;
+        
+        inversions += mergeSort(arr, left, mid);
+        
+        inversions += mergeSort(arr, mid + 1, right);
+        
+        inversions += merge(arr, left, mid, right);
     }
-
-    int mid = (left + right) >> 1;
-    mergeSort(arr, left, mid);
-    mergeSort(arr, mid + 1, right);
-    merge(arr, left, mid, right);
+    return inversions;
 }
 
 int main() {
@@ -59,15 +66,11 @@ int main() {
     cin >> n;
     
     vector<int> arr(n);
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
-    mergeSort(arr, 0, n - 1);
+    long long inversions = mergeSort(arr, 0, n - 1);
     
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+    cout << inversions << endl;
 }
