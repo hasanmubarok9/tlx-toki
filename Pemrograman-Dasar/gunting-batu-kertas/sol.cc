@@ -19,13 +19,17 @@ int main() {
     }
 
     for (int i = 0; i < n; i++) {
-        if (s1[i] == 'G' && k > 0) {
-            ans++;
-            k--;
+        if (s1[i] == 'G') {
+            if (k > 0) {
+                ans++;
+                k--;
+            }
         }
-        else if (s1[i] == 'B' && b > 0) {
-            ans++;
-            b--;
+        else if (s1[i] == 'K') {
+            if (b > 0) {
+                ans++;
+                b--;
+            }
         } else if (g > 0) {
             ans++;
             g--;
