@@ -12,7 +12,7 @@ int main() {
     int v, h, n;
     cin >> v >> h >> n;
 
-    v++;
+    v++; // Add 1 to the number of vertical lines to account for the bottom line
     bool arr[v][h];
     memset(arr, 0, sizeof(arr));
 
@@ -28,7 +28,7 @@ int main() {
 
     ll dp[v][h];
     for (int i = 0; i < h; i++) dp[v - 1][i] = 0;
-    cout << "nilai dp:\n";
+    cout << "nilai dp awal:\n";
     for (int i = 0; i < v; i++) {
         for (int j = 0; j < h; j++) {
             cout << dp[i][j] << " ";
