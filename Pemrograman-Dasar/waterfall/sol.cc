@@ -26,6 +26,15 @@ int main() {
         }
     }
 
+    cout << "nilai arr:\n";
+    for (int i = 0; i < v; i++) {
+        for (int j = 0; j < h; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << '\n';
+    }
+    cout << "=====================\n";
+
     ll dp[v][h];
     for (int i = 0; i < h; i++) dp[v - 1][i] = 0;
     cout << "nilai dp awal:\n";
