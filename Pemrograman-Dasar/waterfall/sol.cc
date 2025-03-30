@@ -28,8 +28,19 @@ int main() {
 
     ll dp[v][h];
     for (int i = 0; i < h; i++) dp[v - 1][i] = 0;
+    cout << "nilai dp:\n";
+    for (int i = 0; i < v; i++) {
+        for (int j = 0; j < h; j++) {
+            cout << dp[i][j] << " ";
+        }
+        cout << '\n';
+    }
+    cout << "=====================\n";
     for (int i = v - 2; i >= 0; i--) {
         for (int j = 0; j < h; j++) {
+            cout << "nilai i: " << i << ", dan nilai j: " << j << '\n';
+            cout << "nilai arr[i][j]: " << arr[i][j] << '\n';
+            cout << "nilai arr[i + 1][j]: " << arr[i + 1][j] << '\n';
             if (arr[i][j]) continue;
             if (!arr[i + 1][j]) dp[i][j] = dp[i + 1][j];
             else {
@@ -47,11 +58,20 @@ int main() {
 
                 dp[i][j] = 1 + cntl + cntr;
             }
+            cout << "nilai dp:\n";
+            for (int k = 0; k < v; k++) {
+                for (int l = 0; l < h; l++) {
+                    cout << dp[k][l] << " ";
+                }
+                cout << '\n';
+            }
+            cout << "=====================\n";
         }
     }
 
     ll ans = 0;
     for (int i = 0; i < h; i++) {
+        cout << "nilai i: " << i << ", dan nilai dp[0][i] = " << dp[0][i] << '\n';
         ans = max(ans, dp[0][i]);
     }
 
