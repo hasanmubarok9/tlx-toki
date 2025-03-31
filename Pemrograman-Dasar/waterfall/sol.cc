@@ -35,7 +35,7 @@ int main()
     for (int i = 0; i < h; i++) {
         dp[v - 1][i] = 0;
     }
-    for (int i = v - 2; i > 0; i--) {
+    for (int i = v - 2; i >= 0; i--) {
         for (int j = 0; j < h; j++) {
             if (arr[i][j]) continue;
             if (!arr[i + 1][j]) dp[i][j] = dp[i + 1][j];
