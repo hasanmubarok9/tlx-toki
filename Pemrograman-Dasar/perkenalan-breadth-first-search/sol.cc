@@ -40,13 +40,17 @@ int main()
             cout << d << '\n';
             return 0;
         }
+        cout << "nilai v.size(): " << v.size() << '\n';
+        cout << "nilai k: " << k << '\n';
+        cout << "nilai v.size() - k: " << v.size() - k << '\n';
         for (int i = 0; i <= v.size() - k; i++)
         {
+            cout << "nilai i: " << i << '\n';
             vector<int> u = v;
             reverse(u.begin() + i, u.begin() + i + k);
-            // cout << "nilai u: ";
-            // for (int x: u) cout << x << ' ';
-            // cout << '\n';
+            cout << "nilai u setelah reverse: ";
+            for (int x: u) cout << x << ' ';
+            cout << '\n';
             if (!vis.count(u))
             {
                 vis.insert(u);
@@ -59,7 +63,7 @@ int main()
                 // cout << '\n';
                 q.push({u, d + 1});
             }
-            // cout << "nilai q: ";
+            // cout << "nilai q:\n";
             // queue<pair<vector<int>, int>> q2 = q;
             // while (!q2.empty())
             // {
@@ -69,6 +73,7 @@ int main()
             //     cout << "di dalam while q2, nilai d: " << d << '\n';
             //     q2.pop();
             // }
+            // cout << '\n';
         }
     }
     cout << -1 << '\n';
