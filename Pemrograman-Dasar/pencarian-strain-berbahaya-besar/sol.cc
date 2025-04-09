@@ -44,7 +44,7 @@ int main()
     string ans;
     for (int i = 0; i < p; i++)
     {
-        cout << "nilai i: " << i << ", nilai v[i].second: " << v[i].second << ", dan nilai s: " << s << '\n';
+        cout << "nilai i: " << i << ", nilai v[i].first: " << v[i].first << ", nilai v[i].second: " << v[i].second << ", dan nilai s: " << s << '\n';
         int out = dfs(node, val, v[i].second);
         if (out > s)
         {
