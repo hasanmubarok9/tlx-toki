@@ -8,10 +8,17 @@ int parent[N];
 
 int find(int x)
 {
+    cout << "di dalam find, nilai x: " << x << endl;
     if (parent[x] != x)
     {
         parent[x] = find(parent[x]);
     }
+    cout << "di akhir find, nilai x: " << x << ", dan nilai parent: ";
+    for (int i = 1; i <= n; i++)
+    {
+        cout << parent[i] << " ";
+    }
+    cout << endl;
     return parent[x];
 }
 
@@ -19,11 +26,17 @@ void join(int x, int y)
 {
     x = find(x);
     y = find(y);
+    parent[x] = y;
 }
 
 int main()
 {
     cin >> n >> q;
+
+    for (int i = 1; i <= n; i++)
+    {
+        parent[i] = i;
+    }
 
     while (q--)
     {
@@ -32,24 +45,18 @@ int main()
 
         if (x == 1)
         {
-            // join a and b
-            // adj[a].emplace_back(b);
-            // adj[b].emplace_back(a);
-
-            // // TODO: join a and b
-            // tarjan(a);
+            join(a, b);
         }
         else
         {
-            // find if a and b are in the same SCC
-            // if (cmp[a] == cmp[b])
-            // {
-            //     cout << "Y" << endl;
-            // }
-            // else
-            // {
-            //     cout << "T" << endl;
-            // }
+            if (find(a) == find(b))
+            {
+                cout << "Y" << endl;
+            }
+            else
+            {
+                cout << "T" << endl;
+            }
         }
     }
 }
