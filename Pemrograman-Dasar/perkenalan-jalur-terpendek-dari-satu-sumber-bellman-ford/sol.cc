@@ -70,6 +70,7 @@ int main()
 					if (dist[a] == INF) continue;
 					if (dist[a] + cost < dist[b])
 					{
+						cout << "masuk dist[a] + cost < dist[b], nilai a: " << a << ", nilai b: " << b << ", nilai dist[a]: " << dist[a] << ", nilai cost: " << cost << ", nilai dist[a] + cost: " << dist[a] + cost << ", nilai dist[b]: " << dist[b] << '\n';
 						dist[b] = dist[a] + cost;
 						updated = true;
 					}
