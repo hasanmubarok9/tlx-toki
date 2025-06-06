@@ -77,6 +77,7 @@ int main()
 				}
 			}
 			cout << "akhir dari i: " << i << '\n';
+			cout << "nilai updated: " << updated << '\n';
 			cout << "nilai dist: ";
 			for (int x = 0; x < v; x++) {
 				cout << dist[x] << " ";
