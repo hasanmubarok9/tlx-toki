@@ -21,16 +21,35 @@ int main()
 		int v, e;
 		cin >> v >> e;
 
+		cout << "nilai v: " << v << ", dan nilai e: " << e << '\n';
+
 		for (int i = 0; i < v; ++i)
 		{
 			dist[i] = INF;
 			vec[i].clear();
 		}
+
+		cout << "nilai dis: ";
+
+		for (int i = 0; i <= v; i++) {
+			cout << dist[i] << " ";
+		}
+		cout << '\n';
 		for (int i = 0; i < e; i++)
 		{
 			int x, y, z;
 			cin >> x >> y >> z;
+			cout << "nilai x: " << x << ", nilai y: " << y << ", nilai z: " << z << '\n';
 			vec[x].emplace_back(y, z);
+		}
+
+		cout << "nilai vec: ";
+		for (int i = 0; i < v; i++) {
+			cout << "nilai vec[" << i << "]: ";
+			for (auto j : vec[i]) {
+				cout << "(" << j.first << ", " << j.second << ") ";
+			}
+			cout << '\n';
 		}
 
 		dist[0] = 0;
