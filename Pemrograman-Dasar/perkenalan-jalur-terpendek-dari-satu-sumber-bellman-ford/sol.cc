@@ -64,7 +64,7 @@ int main()
 					cout << "nilai i: " << i << ", nilai j: " << j << ", nilai k: " << k << ", dan nilai vec[j][k]: " << vec[j][k].first << ", " << vec[j][k].second << '\n';
 					int a = j;
 					int b = vec[j][k].first;
-					cout << "nilai a: " << a << ", nilai b: " << b << '\n';
+					cout << "nilai a: " << a << ", nilai b: " << b << ", nilai dist[a]: " << dist[a] << ", nilai dist[b]: " << dist[b] << '\n';
 					int cost = vec[j][k].second;
 					cout << "nilai cost: " << cost << '\n';
 					if (dist[a] == INF) continue;
@@ -76,6 +76,12 @@ int main()
 					}
 				}
 			}
+			cout << "akhir dari i: " << i << '\n';
+			cout << "nilai dist: ";
+			for (int x = 0; x < v; x++) {
+				cout << dist[x] << " ";
+			}
+			cout << '\n' << '\n';
 		}
 		if (updated)
 		{
