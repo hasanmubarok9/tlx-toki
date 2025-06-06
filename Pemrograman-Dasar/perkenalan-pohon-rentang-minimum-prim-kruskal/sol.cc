@@ -73,6 +73,12 @@ int main()
 
     ll ans = 0;
     sort(v.begin(), v.end());
+    cout << "nilai v setelah sort:\n";
+    for (pair<ll, pair<ll, ll>> i : v)
+    {
+        cout << i.first << " " << i.second.first << " " << i.second.second << endl;
+    }
+    cout << '\n';
     for (pair<ll, pair<ll, ll>> i : v)
     {
         cout << "nilai i: " << i.first << ", " << i.second.first << ", " << i.second.second << endl;
