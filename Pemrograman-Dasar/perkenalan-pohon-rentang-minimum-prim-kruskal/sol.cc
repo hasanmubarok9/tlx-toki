@@ -83,6 +83,7 @@ int main()
             cout << "nilai ans: " << ans << endl;
             join(i.second.first, i.second.second);
         }
+        cout << "akhir loop untuk i: " << i.first << ", " << i.second.first << ", " << i.second.second << endl << endl;
     }
 
     cout << ans << endl;
