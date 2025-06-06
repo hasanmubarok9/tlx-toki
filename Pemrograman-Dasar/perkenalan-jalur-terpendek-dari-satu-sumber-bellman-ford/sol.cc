@@ -43,7 +43,7 @@ int main()
 			vec[x].emplace_back(y, z);
 		}
 
-		cout << "nilai vec: ";
+		cout << "nilai vec:\n";
 		for (int i = 0; i < v; i++) {
 			cout << "nilai vec[" << i << "]: ";
 			for (auto j : vec[i]) {
