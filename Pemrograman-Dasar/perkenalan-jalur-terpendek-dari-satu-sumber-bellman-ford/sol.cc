@@ -61,9 +61,12 @@ int main()
 			{
 				for (int k = 0; k < vec[j].size(); k++)
 				{
+					cout << "nilai i: " << i << ", nilai j: " << j << ", nilai k: " << k << ", dan nilai vec[j][k]: " << vec[j][k].first << ", " << vec[j][k].second << '\n';
 					int a = j;
 					int b = vec[j][k].first;
+					cout << "nilai a: " << a << ", nilai b: " << b << '\n';
 					int cost = vec[j][k].second;
+					cout << "nilai cost: " << cost << '\n';
 					if (dist[a] == INF) continue;
 					if (dist[a] + cost < dist[b])
 					{
