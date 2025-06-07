@@ -17,7 +17,12 @@ ll root(ll x)
     }
     cout << "masuk par[x] != x, nilai x: " << x << endl;
     par[x] = root(par[x]);
-    cout << "di akhir root, nilai par[x]: " << par[x] << endl;
+    cout << "di akhir root, nilai par: ";
+    for (ll i = 0; i <= n; i++)
+    {
+        cout << par[i] << " ";
+    }
+    cout << endl;
     return par[x];
 }
 
