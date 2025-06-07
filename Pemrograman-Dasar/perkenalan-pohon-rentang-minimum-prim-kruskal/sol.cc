@@ -12,10 +12,10 @@ ll root(ll x)
     cout << "masuk root, nilai x: " << x << endl;
     if (par[x] == x)
     {
-        cout << "masuk par[x] == x, nilai x: " << x << endl;
+        cout << "masuk par[x] == x, nilai x: " << x << ", dan nilai par[x]: " << par[x] << endl;
         return x;
     }
-    cout << "masuk par[x] != x, nilai x: " << x << endl;
+    cout << "masuk par[x] != x, nilai x: " << x << ", dan nilai par[x]: " << par[x] << endl;
     par[x] = root(par[x]);
     cout << "di akhir root, nilai par: ";
     for (ll i = 0; i <= n; i++)
@@ -102,7 +102,7 @@ int main()
             cout << "nilai ans: " << ans << endl;
             join(i.second.first, i.second.second);
         }
-        cout << "akhir loop untuk i: " << i.first << ", " << i.second.first << ", " << i.second.second << endl << endl;
+        cout << "akhir loop untuk i: " << i.first << ", " << i.second.first << ", " << i.second.second << ", dan nilai ans: " << ans << endl << endl;
     }
 
     cout << ans << endl;
