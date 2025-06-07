@@ -16,7 +16,9 @@ ll root(ll x)
         return x;
     }
     cout << "masuk par[x] != x, nilai x: " << x << endl;
-    return par[x] = root(par[x]);
+    par[x] = root(par[x]);
+    cout << "di akhir root, nilai par[x]: " << par[x] << endl;
+    return par[x];
 }
 
 void join(ll x, ll y)
