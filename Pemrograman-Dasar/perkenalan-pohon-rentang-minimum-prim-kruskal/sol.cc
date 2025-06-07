@@ -32,6 +32,12 @@ void join(ll x, ll y)
         cout << "masuk x != y, nilai x: " << x << ", nilai y: " << y << endl;
         par[x] = y;
     }
+    cout << "di akhir join, nilai par: ";
+    for (ll i = 0; i <= n; i++)
+    {
+        cout << par[i] << " ";
+    }
+    cout << endl;
 }
 
 int main()
