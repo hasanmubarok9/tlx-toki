@@ -5,6 +5,26 @@ using namespace std;
 int n, par[107];
 vector<tuple<int, int, int>> g; // weight, node1, node2
 
+int root(int x)
+{
+    if (par[x] == x)
+    {
+        return x;
+    }
+    return par[x] = root(par[x]);
+}
+
+void join(int x, int y)
+{
+    x = root(x);
+    y = root(y);
+
+    if (x != y)
+    {
+        par[x] = y;
+    }
+}
+
 int main()
 {
     cin >> n;
@@ -29,10 +49,17 @@ int main()
 
     sort(g.begin(), g.end());
 
+    int ans = 0;
     for (auto [w, u, v] : g)
     {
-        cout << w << " " << u << " " << v << endl;
+        if (root(u) != root(v))
+        {
+            join(u, v);
+            ans += w;
+        }
     }
+
+    cout << ans << '\n';
     
     return 0;
 }
