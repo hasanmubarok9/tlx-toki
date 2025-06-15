@@ -57,12 +57,17 @@ int main()
         auto cur = q.front();
         q.pop();
 
+        cout << "nilai cur: " << cur.first << " " << cur.second << '\n';
+
         for (auto next : adj[cur.first])
         {
+            cout << "nilai next: " << next.first << " " << next.second << '\n';
             if (cur.second && next.second) continue;
             bool tol = next.second;
+            cout << "nilai tol: " << tol << '\n';
             if (tol)
             {
+                cout << "masuk tol, nilai dist[0][cur.first]: " << dist[0][cur.first] << " nilai dist[1][next.first]: " << dist[1][next.first] << '\n';
                 if (dist[0][cur.first] + 1 < dist[1][next.first])
                 {
                     dist[1][next.first] = dist[0][cur.first] + 1;
@@ -71,6 +76,7 @@ int main()
             }
             else
             {
+                cout << "masuk non tol, nilai dist[0][cur.first]: " << dist[0][cur.first] << " nilai dist[0][next.first]: " << dist[0][next.first] << '\n';
                 if (dist[0][cur.first] < dist[0][next.first])
                 {
                     dist[0][next.first] = dist[0][cur.first] + 1;
