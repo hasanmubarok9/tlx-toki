@@ -46,30 +46,35 @@ int main()
 
     while (!q.empty())
     {
-        auto [u, pass] = q.front();
+        auto cur = q.front();
         q.pop();
 
-        if (pass)
+        for (auto next : adj[cur.first])
         {
-            if (dist[0][u] + 1 < dist[1][u])
+            if (cur.second && next.second) continue;
+            bool tol = next.second;
+            if (tol)
             {
-                dist[1][u] = dist[0][u] + 1;
-                q.push({u, true});
+                if (dist[0][cur.first] + 1 < dist[1][next.first])
+                {
+                    dist[1][next.first] = dist[0][cur.first] + 1;
+                    q.push({next.first, true});
+                }
             }
-        }
-        else
-        {
-            if (dist[0][u] < dist[0][u])
+            else
             {
-                dist[0][u] = dist[0][u] + 1;
-                q.push({u, false});
+                if (dist[0][cur.first] < dist[0][next.first])
+                {
+                    dist[0][next.first] = dist[0][cur.first] + 1;
+                    q.push({next.first, false});
+                }
+                if (dist[1][cur.first] < dist[1][next.first])
+                {
+                    dist[1][next.first] = dist[1][cur.first] + 1;
+                    q.push({next.first, true});
+                }
             }
-            if (dist[1][u] < dist[1][u])
-            {
-                dist[1][u] = dist[1][u] + 1;
-                q.push({u, true});
-            }
-        }                
+        }                 
     }
 
     cout << min(dist[0][f], dist[1][f]) << '\n';
