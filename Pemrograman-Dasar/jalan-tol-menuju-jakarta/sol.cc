@@ -39,6 +39,14 @@ int main()
         adj[y].push_back({x, true});
     }
 
+    cout << "nilai adj:\n";
+    for (int i = 1; i <= c; i++)
+    {
+        cout << i << ": ";
+        for (auto j : adj[i]) cout << j.first << " ";
+        cout << '\n';
+    }
+
     queue<pair<int, bool>> q;
     q.push({s, false});
     dist[0][s] = 0;
@@ -74,7 +82,15 @@ int main()
                     q.push({next.first, true});
                 }
             }
-        }                 
+        }
+
+        cout << "akhir while, nilai q:\n";
+        auto temp = q;
+        while (!temp.empty())
+        {
+            cout << temp.front().first << " " << temp.front().second << '\n';
+            temp.pop();
+        }
     }
 
     cout << min(dist[0][f], dist[1][f]) << '\n';
