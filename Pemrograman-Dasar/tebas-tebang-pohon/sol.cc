@@ -28,7 +28,8 @@ int main()
 
     cout << "nilai a setelah di sort: ";
     for (int i = 1; i <= n; i++) cout << a[i] << " ";
-    
+    cout << '\n';
+
     ll l = 0, r = mx, note = -1;
     while (l <= r)
     {
@@ -38,8 +39,11 @@ int main()
         ll cut = 0;
         for (int i = 1; i <= n; i++)
         {
+            cout << "nilai a[i]: " << a[i] << " nilai mid: " << mid << ", nilai a[i] - mid: " << a[i] - mid << '\n';
             if (a[i] > mid) cut += a[i] - mid;
+            cout << "nilai cut: " << cut << '\n';
         }
+        cout << "nilai cut: " << cut << " nilai m: " << m << '\n';
         if (cut >= m)
         {
             note = mid;
