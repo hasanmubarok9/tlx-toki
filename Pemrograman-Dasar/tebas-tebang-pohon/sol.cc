@@ -20,11 +20,19 @@ int main()
         mx = max(mx, a[i]);
     }
 
+    cout << "nilai a: ";
+    for (int i = 1; i <= n; i++) cout << a[i] << " ";
+    cout << '\n';
+
     sort(a + 1, a + n + 1);
+
+    cout << "nilai a setelah di sort: ";
     ll l = 0, r = mx, note = -1;
     while (l <= r)
     {
+        cout << "nilai l: " << l << " nilai r: " << r << '\n';
         ll mid = (l + r) >> 1;
+        cout << "nilai mid: " << mid << '\n';
         ll cut = 0;
         for (int i = 1; i <= n; i++)
         {
@@ -36,6 +44,8 @@ int main()
             l = mid + 1;
         }
         else r = mid - 1;
+
+        cout << "akhir while, nilai l: " << l << " nilai r: " << r << " nilai note: " << note << '\n' << '\n';
     }
     cout << note << '\n';
     return 0;
