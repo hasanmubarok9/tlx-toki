@@ -46,10 +46,15 @@ int main()
         cout << "nilai cut: " << cut << " nilai m: " << m << '\n';
         if (cut >= m)
         {
+            cout << "masuk kanan\n";
             note = mid;
             l = mid + 1;
         }
-        else r = mid - 1;
+        else
+        {
+            cout << "masuk kiri\n";
+            r = mid - 1;
+        }
 
         cout << "akhir while, nilai l: " << l << " nilai r: " << r << " nilai note: " << note << '\n' << '\n';
     }
