@@ -40,7 +40,11 @@ int main()
         for (int i = 1; i <= n; i++)
         {
             cout << "nilai a[i]: " << a[i] << " nilai mid: " << mid << ", nilai a[i] - mid: " << a[i] - mid << '\n';
-            if (a[i] > mid) cut += a[i] - mid;
+            if (a[i] > mid)
+            {
+                cout << "masuk a[i] > mid. ketika nilai a[i]: " << a[i] << ", dan nilai mid: " << mid << ", nilai a[i] - mid: " << a[i] - mid << '\n';
+                cut += a[i] - mid;
+            }
             cout << "nilai cut: " << cut << '\n';
         }
         cout << "nilai cut: " << cut << " nilai m: " << m << '\n';
