@@ -27,6 +27,8 @@ int main()
     sort(a + 1, a + n + 1);
 
     cout << "nilai a setelah di sort: ";
+    for (int i = 1; i <= n; i++) cout << a[i] << " ";
+    
     ll l = 0, r = mx, note = -1;
     while (l <= r)
     {
