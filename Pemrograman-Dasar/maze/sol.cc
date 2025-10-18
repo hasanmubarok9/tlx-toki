@@ -32,8 +32,12 @@ int main() {
 
   while (!q.empty()) {
     auto [r, c] = q.front();
-    cout << "nilai r: " << r << ", dan nilai c: " << c << endl;
     q.pop();
+
+    if ((r == 0 || r + 1 == n || c == 0 || c + 1 == m) && maze[r][c] == 0) {
+      cout << sum[r][c] << '\n';
+      return 0;
+    }
 
     for (int i = 0; i < 4; i++) {
       int br = r + dr[i];
@@ -45,14 +49,7 @@ int main() {
         q.push(make_pair(br, bc));
       }
     }
-    cout << "nilai q:\n";
-    auto temp = q;
-    while (!temp.empty()) {
-      auto [x, y] = temp.front();
-      cout << '(' << x << ',' << y << ')' << endl;
-      temp.pop();
-    }
-    cout << endl;
   }
   cout << -1 << '\n';
+  return 0;
 }
