@@ -7,15 +7,10 @@ unordered_set<int> results;
 
 void dfs(int total, int last, int pos) {
 
-  cout << "nilai total: " << total << ", nilai last: " << last
-       << ", dan nilai pos: " << pos << endl;
   if (pos == s.size()) {
     results.insert(total + last);
     return;
   }
-
-  cout << "nilai pos: " << pos << ", nilai s: " << s
-       << ", dan nilai s[pos]: " << s[pos] << endl;
 
   int d = s[pos] - '0';
 
@@ -23,7 +18,7 @@ void dfs(int total, int last, int pos) {
   dfs(total + last, d, pos + 1);
 
   // '-' case
-  dfs(total - last, -d, pos + 1);
+  dfs(total + last, -d, pos + 1);
 
   // concatenation case
   if (last >= 0) {
@@ -41,12 +36,6 @@ int main() {
 
   int x = s[0] - '0'; // the first digit
   dfs(0, x, 1);
-
-  cout << "nilai results: ";
-  for (int x : results) {
-    cout << x << ' ';
-  }
-  cout << endl;
 
   cout << results.size() << '\n';
 }
