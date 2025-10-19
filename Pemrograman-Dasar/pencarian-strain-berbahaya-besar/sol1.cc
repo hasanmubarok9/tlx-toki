@@ -43,21 +43,22 @@ int main() {
         while (!st.empty()) {
             int node = st.back().first;
             int &idx = st.back().second;
+            cout << "d dalam while s, nilai node: " <<  node << ", dannilai idx: " << idx << endl;
 
             if (idx < (int)child[node].size()) {
                 int nxt = child[node][idx++];
                 if (!seen[nxt]) {
                     st.emplace_back(nxt, 0);
                     seen[nxt] = 1;
-                } else {
-                    int best = 0;
-                    for (int c: child[node]) {
-                        best = max(best, dp[c]);
-                    }
-                    dp[node] = val[node] + best;
-                    seen[node] = 2;
-                    st.pop_back();
                 }
+            } else {
+                int best = 0;
+                for (int c: child[node]) {
+                    best = max(best, dp[c]);
+                }
+                dp[node] = val[node] + best;
+                seen[node] = 2;
+                st.pop_back();
             }
         }
     }
