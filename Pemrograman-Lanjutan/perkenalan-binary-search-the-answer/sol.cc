@@ -19,7 +19,7 @@ int main() {
 
   double l = 0;
   // double r = 2e9;
-  double r = 5;
+  double r = 4;
   double ans = r;
 
   while (r - l >= EPS) {
@@ -47,8 +47,10 @@ int main() {
          << '\n';
 
     if (abs(r - l) < EPS) {
+      cout << "masuk, break the code\n";
       break;
     }
+    cout << "akhir untuk r: " << r << ", dan l: " << l << endl << endl;
   }
 
   cout << fixed << setprecision(2) << ans << '\n';
