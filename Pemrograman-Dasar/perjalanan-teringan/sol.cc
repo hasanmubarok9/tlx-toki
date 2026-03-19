@@ -68,7 +68,7 @@ int main() {
 
   while (!pq.empty()) {
     auto [cost, u] = pq.top();
-    cout << "nilai cost: " << cost << ", nilai u: " << u << endl;
+    cout << "di dalam while, BFS!!!, nilai cost: " << cost << ", nilai u: " << u << endl;
     pq.pop();
 
     if (cost != dist[u])
@@ -81,6 +81,7 @@ int main() {
     for (int k = 0; k < 4; k++) {
       int nx = ux + dx[k];
       int ny = uy + dy[k];
+      cout << "nilai nx: " << nx << ", nilai ny: " << ny << endl;
       if (nx < 0 || nx >= R || ny < 0 || ny >= C)
         continue;
       int v = nx * C + ny;
