@@ -20,6 +20,7 @@ int main() {
     for (int j = 0; j < C; j++) {
       int x;
       cin >> x;
+      cout << "nilai i: " << i << ", nilai j: " << j << ", nilai i * C + j: " << i * C + j << ", nilai x: " << x << endl;
       A[i * C + j] = x;
     }
   }
