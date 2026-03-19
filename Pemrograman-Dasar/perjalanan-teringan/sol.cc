@@ -23,14 +23,24 @@ int main() {
       A[i * C + j] = x;
     }
   }
+  cout << "nilai A: ";
+  for (int i = 0; i < R; i++) {
+    for (int j = 0; j < C; j++) {
+      cout << A[i * C + j] << " ";
+    }
+    cout << " ### ";
+  }
+  cout << endl;
   int a, b, c, d;
   cin >> a >> b >> c >> d;
   a--;
   b--;
   c--;
   d--;
+  cout << "nilai a: " << a << ", nilai b: " << b << ", nilai c: " << c << ", nilai d: " << d << endl;
   int s = a * C + b;
   int t = c * C + d;
+  cout << "nilai s: " << s << ", nilai t: " << t << endl;
 
   // if end is blocked -> unreachable
   if (A[t] == -1) {
@@ -39,7 +49,7 @@ int main() {
   }
 
   if (s == t) {
-    cout << a[t] << endl;
+    cout << A[t] << endl;
     return 0;
   }
 
@@ -57,6 +67,7 @@ int main() {
 
   while (!pq.empty()) {
     auto [cost, u] = pq.top();
+    cout << "nilai cost: " << cost << ", nilai u: " << u << endl;
     pq.pop();
 
     if (cost != dist[u])
@@ -65,20 +76,26 @@ int main() {
       break; // reached with minimal bottleneck
     int ux = u / C;
     int uy = u % C;
+    cout << "nilai ux: " << ux << ", nilai uy: " << uy << endl;
     for (int k = 0; k < 4; k++) {
       int nx = ux + dx[k];
       int ny = uy + dy[k];
       if (nx < 0 || nx >= R || ny < 0 || ny >= C)
         continue;
       int v = nx * C + ny;
+      cout << "nilai v: " << v << ", dan nilai A[v]: " << A[v] << endl;
       if (A[v] == -1)
         continue;
+      cout << "nilai v: " << v << ", dan nilai A[v]: " << A[v] << endl;
       int ncost = max(cost, A[v]);
+      cout << "nilai ncost: " << ncost << endl;
       if (ncost < dist[v]) {
+        cout << "massukk ncost " << ncost << endl;
         dist[v] = ncost;
         pq.push({ncost, v});
       }
     }
+    cout << "akhir while, untuk cost: " << cost << ", u: " << u << endl << endl;
   }
 
   if (dist[t] == INF)
