@@ -46,6 +46,7 @@ int main() {
   q.push({A, 0});
 
   while (!q.empty()) {
+    cout << "di dalam bfs\n";
     auto [u, used] = q.front();
     cout << "nilai u: " << u << ", dan nilai used: " << used << endl;
     q.pop();
@@ -71,7 +72,12 @@ int main() {
       }
     }
 
-    cout << "akhir untuk u: " << u << ", dan used: " << used << endl << endl;
+    cout << "nilai dist:\n";
+    for (auto x: dist) {
+      cout << x[0] << ' ' << x[1] << '\n';
+    }
+
+    cout << "akhir bfs untuk u: " << u << ", dan used: " << used << endl << endl;
   }
 
   cout << "nilai dist:\n";
