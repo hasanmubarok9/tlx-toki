@@ -68,6 +68,15 @@ int main() {
     }
   }
 
+  cout << "nilai dist:\n";
+  for (int i = 0; i < N; i++) {
+    for (int j = 0; j < 2; j++) {
+      cout << dist[i][j] << ' ';
+    }
+    cout << '\n';
+  }
+  cout << '\n';
+
   int ans = INT_MAX;
 
   if (dist[B][0] != -1) {
