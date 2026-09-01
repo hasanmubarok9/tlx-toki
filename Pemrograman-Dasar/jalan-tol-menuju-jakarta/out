@@ -1,7 +1,99 @@
+nilai u: 0, dan nilai used: 0
+nilai v: 1, used: 0, dan nilai dist[v][used]: -1
+nilai v: 2, used: 0, dan nilai dist[v][used]: -1
+hasn't yet used the toll
+akhir untuk u: 0, dan used: 0
+
+nilai u: 1, dan nilai used: 0
+nilai v: 0, used: 0, dan nilai dist[v][used]: 0
+nilai v: 2, used: 0, dan nilai dist[v][used]: 1
+nilai v: 3, used: 0, dan nilai dist[v][used]: -1
+hasn't yet used the toll
+akhir untuk u: 1, dan used: 0
+
+nilai u: 2, dan nilai used: 0
+nilai v: 0, used: 0, dan nilai dist[v][used]: 0
+nilai v: 1, used: 0, dan nilai dist[v][used]: 1
+nilai v: 3, used: 0, dan nilai dist[v][used]: 2
+hasn't yet used the toll
+nilai v: 5, dan nilai dist[v][1]: -1
+akhir untuk u: 2, dan used: 0
+
+nilai u: 3, dan nilai used: 0
+nilai v: 1, used: 0, dan nilai dist[v][used]: 1
+nilai v: 2, used: 0, dan nilai dist[v][used]: 1
+nilai v: 4, used: 0, dan nilai dist[v][used]: -1
+nilai v: 5, used: 0, dan nilai dist[v][used]: -1
+hasn't yet used the toll
+akhir untuk u: 3, dan used: 0
+
+nilai u: 5, dan nilai used: 1
+nilai v: 3, used: 1, dan nilai dist[v][used]: -1
+nilai v: 6, used: 1, dan nilai dist[v][used]: -1
+akhir untuk u: 5, dan used: 1
+
+nilai u: 4, dan nilai used: 0
+nilai v: 3, used: 0, dan nilai dist[v][used]: 2
+nilai v: 6, used: 0, dan nilai dist[v][used]: -1
+hasn't yet used the toll
+nilai v: 5, dan nilai dist[v][1]: 2
+akhir untuk u: 4, dan used: 0
+
+nilai u: 5, dan nilai used: 0
+nilai v: 3, used: 0, dan nilai dist[v][used]: 2
+nilai v: 6, used: 0, dan nilai dist[v][used]: 4
+hasn't yet used the toll
+nilai v: 2, dan nilai dist[v][1]: -1
+nilai v: 4, dan nilai dist[v][1]: -1
+akhir untuk u: 5, dan used: 0
+
+nilai u: 3, dan nilai used: 1
+nilai v: 1, used: 1, dan nilai dist[v][used]: -1
+nilai v: 2, used: 1, dan nilai dist[v][used]: 4
+nilai v: 4, used: 1, dan nilai dist[v][used]: 4
+nilai v: 5, used: 1, dan nilai dist[v][used]: 2
+akhir untuk u: 3, dan used: 1
+
+nilai u: 6, dan nilai used: 1
+nilai v: 4, used: 1, dan nilai dist[v][used]: 4
+nilai v: 5, used: 1, dan nilai dist[v][used]: 2
+akhir untuk u: 6, dan used: 1
+
+nilai u: 6, dan nilai used: 0
+nilai v: 4, used: 0, dan nilai dist[v][used]: 3
+nilai v: 5, used: 0, dan nilai dist[v][used]: 3
+hasn't yet used the toll
+akhir untuk u: 6, dan used: 0
+
+nilai u: 2, dan nilai used: 1
+nilai v: 0, used: 1, dan nilai dist[v][used]: -1
+nilai v: 1, used: 1, dan nilai dist[v][used]: 4
+nilai v: 3, used: 1, dan nilai dist[v][used]: 3
+akhir untuk u: 2, dan used: 1
+
+nilai u: 4, dan nilai used: 1
+nilai v: 3, used: 1, dan nilai dist[v][used]: 3
+nilai v: 6, used: 1, dan nilai dist[v][used]: 3
+akhir untuk u: 4, dan used: 1
+
+nilai u: 1, dan nilai used: 1
+nilai v: 0, used: 1, dan nilai dist[v][used]: 5
+nilai v: 2, used: 1, dan nilai dist[v][used]: 4
+nilai v: 3, used: 1, dan nilai dist[v][used]: 3
+akhir untuk u: 1, dan used: 1
+
+nilai u: 0, dan nilai used: 1
+nilai v: 1, used: 1, dan nilai dist[v][used]: 4
+nilai v: 2, used: 1, dan nilai dist[v][used]: 4
+akhir untuk u: 0, dan used: 1
+
 nilai dist:
-0 -1 
-1 -1 
--1 2 
--1 3 
+0 5 
+1 4 
+1 4 
+2 3 
+3 4 
+3 2 
+4 3 
 
 3

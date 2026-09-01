@@ -47,10 +47,12 @@ int main() {
 
   while (!q.empty()) {
     auto [u, used] = q.front();
+    cout << "nilai u: " << u << ", dan nilai used: " << used << endl;
     q.pop();
 
     // Use normal road
     for (int v: normal[u]) {
+      cout << "nilai v: " << v << ", used: " << used << ", dan nilai dist[v][used]: " << dist[v][used] << endl;
       if (dist[v][used] == -1) {
         dist[v][used] = dist[u][used] + 1;
         q.push({v, used});
@@ -59,13 +61,17 @@ int main() {
 
     // Use toll, only if we haven't used one yet
     if (used == 0) {
+      cout << "hasn't yet used the toll\n";
       for (int v: toll[u]) {
+        cout << "nilai v: " << v << ", dan nilai dist[v][1]: " << dist[v][1] << endl;
         if (dist[v][1] == -1) {
           dist[v][1] = dist[u][0] + 1;
           q.push({v, 1});
         }
       }
     }
+
+    cout << "akhir untuk u: " << u << ", dan used: " << used << endl << endl;
   }
 
   cout << "nilai dist:\n";
