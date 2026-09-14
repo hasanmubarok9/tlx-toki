@@ -9,18 +9,19 @@ int main() {
   string s;
   cin >> s;
 
-  int n = s.size();
-  int idx = 0, inc = 1;
+  int slen = s.size();
+  int n = ceil(sqrtl(slen));
+  int idx = 0, inc =  1;
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
-      if (idx < n) cout << s[idx];
+      if (idx < slen) cout << s[idx];
       else cout << '.';
       idx += inc;
     }
+    cout << '\n';
     if (inc == 1) idx += (n - 1);
     else idx += n + 1;
     inc *= -1;
-    cout << '\n';
   }
   return 0;
 }
