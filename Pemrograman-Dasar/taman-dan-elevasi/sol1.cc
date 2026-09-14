@@ -82,6 +82,11 @@ int main() {
 
     // add all cells with height = val
     int j = i;
+    cout << "nilai j: " << j << endl;
+    if (j < (int)cells.size()) {
+      cout << "nilai cells[j].first: " << cells[j].first << endl;
+    }
+    cout << endl;
     while (j < (int)cells.size() && cells[j].first == val) {
       cout << "di dalam while j: " << j << "\n";
       int idx = cells[j].second;
@@ -111,6 +116,7 @@ int main() {
       }
       j++;
     }
+    cout << "=======take me to curch\n\n";
     cout << "akhir untuk i: " << i << ", nilai j: " << j << ", dan nilai currComponents: " << (currComponents) << endl << endl;
     i = j;
   }
