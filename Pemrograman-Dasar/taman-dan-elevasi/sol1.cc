@@ -56,6 +56,12 @@ int main() {
       return A.second < B.second;
   });
 
+  cout << "nilai cells setelah diurutkan:\n";
+  for (auto [height, idx]: cells) {
+    cout << "(" << height << ", " << idx << ")\n";
+  }
+  cout << '\n';
+
   DSU dsu(n * m);
   vector<char> active(n * m, 0);
   int currComponents = 0;
@@ -67,26 +73,36 @@ int main() {
 
   int i = 0;
   while (i < (int)cells.size()) {
+    cout << "di dalam while i, nilai i: " << i << endl;
     int val = cells[i].first;
+    cout << "nilai val: " << val << endl;
     // current state correspond to x = val (active = heights > val)
     ans = max(ans, currComponents);
+    cout << "nilai ans: " << ans << endl;
 
     // add all cells with height = val
     int j = i;
     while (j < (int)cells.size() && cells[j].first == val) {
+      cout << "di dalam while j: " << j << "\n";
       int idx = cells[j].second;
+      cout << "nilai idx: " << idx << endl;
       active[idx] = 1;
       ++currComponents; // a new component initially
+      cout << "nilai componenets initially: " << currComponents << endl;
       auto [r, c] = id_to_rc(idx);
+      cout << "nilai r: " << r << ", dan nilai c: " << c << endl;
       // check 4 neighbors
       const int dr[4] = {-1, 1, 0, 0};
       const int dc[4] = {0, 0, -1, 1};
       for (int d = 0; d < 4; d++) {
         int nr = r + dr[d];
         int nc = c + dc[d];
+        cout << "nilai nr: " << nr << ", dan nilai nc: " << nc << endl;
         if (nr < 0 || nr >= n || nc < 0 || nc >= m) continue;
         int nidx = nr * m + nc;
+        cout << "nilai nidx: " << (nidx) << endl;
         if (active[nidx]) {
+          cout << "nidx nya active cuy\n";
           // If they belong to different components, unite and decrease count
           if (dsu.unite(idx, nidx)) {
             --currComponents;
@@ -95,6 +111,7 @@ int main() {
       }
       j++;
     }
+    cout << "akhir untuk i: " << i << ", nilai j: " << j << ", dan nilai currComponents: " << (currComponents) << endl << endl;
     i = j;
   }
   // also consider x < min_height (after all cells added)
