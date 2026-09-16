@@ -32,4 +32,43 @@ int main() {
   }
 
   // len = number of matrices in the interval
+  for (int len = 2; len <= N; len++) {
+    for (int i = 0; i + len - 1 < N; i++) {
+      int j = i + len - 1;
+
+      dp[i][j] = LLONG_MAX;
+      ways[i][j] = 0;
+      all[i][j] = 0;
+
+      for (int k = i; k < j; k++) {
+        // Cost of splitting
+        // (M[i] ... M[k]) * (M[k + 1] ... M[j])
+        ll cost = dp[i][k] + dp[k + 1][j] + A[i] * A[k + 1] * A[j + 1]
+
+        // Count ALL possible ways
+        all[i][j] = (all[i][j] + all[i][k] * all[k + 1][j]) % MOD;
+
+        // Count minimum-cost ways
+        ll currentWays = (ways[i][k]* ways[i + 1][j]) % MOD;
+
+        if (cost < dp[i][j]) {
+          dp[i][j] = cost;
+          ways[i][j] = currentWays;
+        } else if (cost == dp[i][j]) {
+          ways[i][j] += currentWays;
+          ways[i][j] %= MOD;
+        }
+      }
+    }
+  }
+
+  if (Q == 1) {
+    cout << dp[0][N - 1] << '\n';
+  } else if (Q == 2) {
+    cout << ways[0][N - 1] << '\n';
+  } else {
+    cout << all[0][N - 1] << '\n';
+  }
+
+  return 0;
 }
