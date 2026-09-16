@@ -2,6 +2,10 @@
 
 using namespace std;
 
+using ll = long long;
+
+const ll MOD = 26101991;
+
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
@@ -43,7 +47,7 @@ int main() {
       for (int k = i; k < j; k++) {
         // Cost of splitting
         // (M[i] ... M[k]) * (M[k + 1] ... M[j])
-        ll cost = dp[i][k] + dp[k + 1][j] + A[i] * A[k + 1] * A[j + 1]
+        ll cost = dp[i][k] + dp[k + 1][j] + A[i] * A[k + 1] * A[j + 1];
 
         // Count ALL possible ways
         all[i][j] = (all[i][j] + all[i][k] * all[k + 1][j]) % MOD;
