@@ -50,8 +50,10 @@ int main(void) {
     for (int i = 0; i < N; i++) {
       char c = msg2[i];
       printf("nilai i: %d, dan nilai c: %c\n", i, c);
+      printf("nilai arr[c]: %d\n", arr[c]);
       if (arr[c] == -1) result[i] = '?';
       else result[i] = arr[c];
+      printf("\n");
     }
     result[N] = '\0';
     printf("%s\n", result);
