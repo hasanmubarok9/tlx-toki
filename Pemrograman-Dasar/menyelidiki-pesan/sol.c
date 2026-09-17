@@ -17,7 +17,7 @@ int main(void) {
     printf("nilai c: %c\n", c);
     printf("nilai c_ori: %c\n", c_ori);
     printf("nilai arr[c]: %d\n", arr[c]);
-    printf("nilai inv_arr[c]: %d\n", inv_arr[c]);
+    printf("nilai inv_arr[c_ori]: %d\n", inv_arr[c_ori]);
 
     if ((arr[c] == -1) && (inv_arr[c_ori] == -1)) {
       printf("arr dan inv_arr masih -1, nilai c: %d, dan nilai c_ori: %d\n", c, c_ori);

@@ -1,7 +1,7 @@
 nilai c: O
 nilai c_ori: I
 nilai arr[c]: -1
-nilai inv_arr[c]: -1
+nilai inv_arr[c_ori]: -1
 arr dan inv_arr masih -1, nilai c: 79, dan nilai c_ori: 73
 nilai arr:
 A: -1
@@ -63,7 +63,7 @@ Z: -1
 nilai c: S
 nilai c_ori: O
 nilai arr[c]: -1
-nilai inv_arr[c]: -1
+nilai inv_arr[c_ori]: -1
 arr dan inv_arr masih -1, nilai c: 83, dan nilai c_ori: 79
 nilai arr:
 A: -1
@@ -125,7 +125,7 @@ Z: -1
 nilai c: N
 nilai c_ori: I
 nilai arr[c]: -1
-nilai inv_arr[c]: -1
+nilai inv_arr[c_ori]: 79
 pencocokan, ketika nilai c: 78, nilai arr[c]: -1, nilai c_ori: 73, dan nilai inv_arr[c_ori]: 79
 terjadi kontradiksi, ketika nilai arr[c]: 78, nilai c_ori: -1, nilai inv_arr[c_ori]: 73, dan nilai c: 79
 Pak Dengklek Bingung
