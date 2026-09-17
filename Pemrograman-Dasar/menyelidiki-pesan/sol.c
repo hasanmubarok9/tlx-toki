@@ -34,13 +34,13 @@ int main(void) {
     printf("nilai arr:\n");
     for (int i = 0; i < 26; i++) {
       printf("%c: ", 'A' + i);
-      printf("%d\n", arr[i]);
+      printf("%d\n", arr[i + 65]);
     }
     printf("\n");
     printf("nilai inv_arr:\n");
     for (int i = 0; i < 26; i++) {
       printf("%c: ", 'A' + i);
-      printf("%d\n", inv_arr[i]);
+      printf("%d\n", inv_arr[i + 65]);
     }
     printf("\n\n");
   }
