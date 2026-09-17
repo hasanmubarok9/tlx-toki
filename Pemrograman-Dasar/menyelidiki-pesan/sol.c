@@ -16,8 +16,11 @@ int main(void) {
     char c = msg1[i], c_ori = msg_ori[i];
     printf("nilai c: %c\n", c);
     printf("nilai c_ori: %c\n", c_ori);
+    printf("nilai arr[c]: %d\n", arr[c]);
+    printf("nilai inv_arr[c]: %d\n", inv_arr[c]);
 
     if ((arr[c] == -1) && (inv_arr[c_ori] == -1)) {
+      printf("arr dan inv_arr masih -1, nilai c: %d, dan nilai c_ori: %d\n", c, c_ori);
       arr[c] = c_ori;
       inv_arr[c_ori] = c;
     } else {
@@ -28,13 +31,13 @@ int main(void) {
       }
     }
 
-    printf("nilai arr: ");
+    printf("nilai arr:\n");
     for (int i = 0; i < 26; i++) {
       printf("%c: ", 'A' + i);
       printf("%d\n", arr[i]);
     }
     printf("\n");
-    printf("nilai inv_arr: ");
+    printf("nilai inv_arr:\n");
     for (int i = 0; i < 26; i++) {
       printf("%c: ", 'A' + i);
       printf("%d\n", inv_arr[i]);
