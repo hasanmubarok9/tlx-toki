@@ -14,7 +14,8 @@ int main(void) {
 
   for (int i = 0; i < N; i++) {
     char c = msg1[i], c_ori = msg_ori[i];
-
+    printf("nilai c: %c\n", c);
+    printf("nilai c_ori: %c\n", c_ori);
 
     if ((arr[c] == -1) && (inv_arr[c_ori] == -1)) {
       arr[c] = c_ori;
@@ -32,6 +33,7 @@ int main(void) {
   else {
     for (int i = 0; i < N; i++) {
       char c = msg2[i];
+      printf("nilai i: %d, dan nilai c: %c\n", i, c);
       if (arr[c] == -1) result[i] = '?';
       else result[i] = arr[c];
     }
