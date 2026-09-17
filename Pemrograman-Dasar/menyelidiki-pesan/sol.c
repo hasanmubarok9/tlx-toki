@@ -27,6 +27,17 @@ int main(void) {
         break;
       }
     }
+
+    printf("nilai arr: ");
+    for (int i = 0; i < N; i++) {
+      printf("%d ", arr[i]);
+    }
+    printf("\n");
+    printf("nilai inv_arr: ");
+    for (int i = 0; i < N; i++) {
+      printf("%d ", inv_arr[i]);
+    }
+    printf("\n\n");
   }
 
   if (flag) printf("Pak Dengklek Bingung\n");
