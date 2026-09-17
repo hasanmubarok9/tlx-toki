@@ -29,13 +29,15 @@ int main(void) {
     }
 
     printf("nilai arr: ");
-    for (int i = 0; i < N; i++) {
-      printf("%d ", arr[i]);
+    for (int i = 0; i < 26; i++) {
+      printf("%c: ", 'A' + i);
+      printf("%d\n", arr[i]);
     }
     printf("\n");
     printf("nilai inv_arr: ");
-    for (int i = 0; i < N; i++) {
-      printf("%d ", inv_arr[i]);
+    for (int i = 0; i < 26; i++) {
+      printf("%c: ", 'A' + i);
+      printf("%d\n", inv_arr[i]);
     }
     printf("\n\n");
   }
