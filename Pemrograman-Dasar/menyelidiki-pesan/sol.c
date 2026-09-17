@@ -24,15 +24,15 @@ int main(void) {
       arr[c] = c_ori;
       inv_arr[c_ori] = c;
     } else {
-      printf("pencocokan, ketika nilai c: %d, nilai arr[c]: %d, nilai c_ori: %d, dan nilai inv_arr[c_ori]: %d\n: ", c, arr[c], c_ori, inv_arr[c_ori]);
+      printf("pencocokan, ketika nilai c: %d, nilai arr[c]: %d, nilai c_ori: %d, dan nilai inv_arr[c_ori]: %d\n", c, arr[c], c_ori, inv_arr[c_ori]);
       if ((arr[c] == c_ori) && (inv_arr[c_ori] == c)) continue;
       else {
+        printf("terjadi kontradiksi, ketika nilai arr[c]: %d, nilai c_ori: %d, nilai inv_arr[c_ori]: %d, dan nilai c: %d\n", c);
         flag = 1;
         break;
       }
     }
 
-    /*
     printf("nilai arr:\n");
     for (int i = 0; i < 26; i++) {
       printf("%c: ", 'A' + i);
@@ -44,7 +44,6 @@ int main(void) {
       printf("%c: ", 'A' + i);
       printf("%d\n", inv_arr[i + 65]);
     }
-    */
     printf("\n\n");
   }
 
