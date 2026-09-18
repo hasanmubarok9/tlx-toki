@@ -22,6 +22,7 @@ int main() {
   bool flag = false;
   for (int i = 0; i < n; i++) {
     int c = msg1[i], c_org = original[i];
+
     if (arr[c] == -1 && inv_arr[c_org] == -1) {
       arr[c] = c_org;
       inv_arr[c_org] = c;
@@ -32,7 +33,6 @@ int main() {
         break;
       }
     }
-
   }
 
   if (flag) {
@@ -40,10 +40,11 @@ int main() {
     return 0;
   } 
   for (int i = 0; i < n; i++) {
-    if (arr[i] == -1) {
+    int c = msg2[i];
+    if (arr[c] == -1) {
       cout << '?';
     } else {
-      cout << char('A' + arr[i]);
+      cout << char(arr[c]);
     }
   }
   cout << '\n';
