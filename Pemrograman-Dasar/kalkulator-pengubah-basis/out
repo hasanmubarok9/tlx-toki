@@ -5,42 +5,19 @@ nilai j: 1, dan nilai s[j]: 1, dan nilai val: 1
 nilai val baru: 11
 nilai j: 2, dan nilai s[j]: 4, dan nilai val: 11
 nilai val baru: 114
-akhir untuk i: 0, nilai dp: 1 1 1 0 0 0 0 
+akhir untuk i: 0, nilai dp: 1 1 1 0 
 
 nilai i: 1, dan nilai dp[i]: 1
 nilai j: 1, dan nilai s[j]: 1, dan nilai val: 0
 nilai val baru: 1
 nilai j: 2, dan nilai s[j]: 4, dan nilai val: 1
 nilai val baru: 14
-nilai j: 3, dan nilai s[j]: 2, dan nilai val: 14
-nilai val baru: 142
-akhir untuk i: 1, nilai dp: 1 1 2 1 0 0 0 
+akhir untuk i: 1, nilai dp: 1 1 2 1 
 
 nilai i: 2, dan nilai dp[i]: 2
 nilai j: 2, dan nilai s[j]: 4, dan nilai val: 0
 nilai val baru: 4
-nilai j: 3, dan nilai s[j]: 2, dan nilai val: 4
-nilai val baru: 42
-akhir untuk i: 2, nilai dp: 1 1 2 3 0 0 0 
+akhir untuk i: 2, nilai dp: 1 1 2 3 
 
-nilai i: 3, dan nilai dp[i]: 3
-nilai j: 3, dan nilai s[j]: 2, dan nilai val: 0
-nilai val baru: 2
-nilai j: 4, dan nilai s[j]: 4, dan nilai val: 2
-nilai val baru: 24
-akhir untuk i: 3, nilai dp: 1 1 2 3 3 0 0 
-
-nilai i: 4, dan nilai dp[i]: 3
-nilai j: 4, dan nilai s[j]: 4, dan nilai val: 0
-nilai val baru: 4
-nilai j: 5, dan nilai s[j]: 0, dan nilai val: 4
-nilai val baru: 40
-akhir untuk i: 4, nilai dp: 1 1 2 3 3 3 0 
-
-nilai i: 5, dan nilai dp[i]: 3
-case 1, substring started with '0'
-nilai dp[i]: 3, dan nilai dp[i + 1]: 0
-akhir untuk i: 5, nilai dp: 1 1 2 3 3 3 3 
-
-nilai dp akhir: 1 1 2 3 3 3 3 
+nilai dp akhir: 1 1 2 3 
 3
