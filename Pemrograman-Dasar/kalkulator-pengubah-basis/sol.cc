@@ -15,7 +15,10 @@ int main() {
 
   cin >> b >> s;
 
+  cout << "nilai basis: " << b << ", dan nilai string: " << s << endl;
+
   int n = s.size();
+  cout << "nilai n: " << n << endl;
 
   // dp[i] stores the number of ways to truncate s[0...i - 1]
   vector<int> dp(n + 1, 0);
