@@ -3,21 +3,30 @@ nilai j: 0, dan nilai s[j]: 1, dan nilai val: 0
 nilai val baru: 1
 nilai j: 1, dan nilai s[j]: 1, dan nilai val: 1
 nilai val baru: 11
-nilai j: 2, dan nilai s[j]: 4, dan nilai val: 11
-nilai val baru: 114
-akhir untuk i: 0, nilai dp: 1 1 1 0 
+nilai j: 2, dan nilai s[j]: 1, dan nilai val: 11
+nilai val baru: 111
+akhir untuk i: 0, nilai dp: 1 1 1 0 0 
 
 nilai i: 1, dan nilai dp[i]: 1
 nilai j: 1, dan nilai s[j]: 1, dan nilai val: 0
 nilai val baru: 1
-nilai j: 2, dan nilai s[j]: 4, dan nilai val: 1
-nilai val baru: 14
-akhir untuk i: 1, nilai dp: 1 1 2 1 
+nilai j: 2, dan nilai s[j]: 1, dan nilai val: 1
+nilai val baru: 11
+nilai j: 3, dan nilai s[j]: 1, dan nilai val: 11
+nilai val baru: 111
+akhir untuk i: 1, nilai dp: 1 1 2 1 0 
 
 nilai i: 2, dan nilai dp[i]: 2
-nilai j: 2, dan nilai s[j]: 4, dan nilai val: 0
-nilai val baru: 4
-akhir untuk i: 2, nilai dp: 1 1 2 3 
+nilai j: 2, dan nilai s[j]: 1, dan nilai val: 0
+nilai val baru: 1
+nilai j: 3, dan nilai s[j]: 1, dan nilai val: 1
+nilai val baru: 11
+akhir untuk i: 2, nilai dp: 1 1 2 3 2 
 
-nilai dp akhir: 1 1 2 3 
-3
+nilai i: 3, dan nilai dp[i]: 3
+nilai j: 3, dan nilai s[j]: 1, dan nilai val: 0
+nilai val baru: 1
+akhir untuk i: 3, nilai dp: 1 1 2 3 5 
+
+nilai dp akhir: 1 1 2 3 5 
+5
