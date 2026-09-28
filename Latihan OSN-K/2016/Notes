@@ -1,0 +1,28 @@
+(WRONG APPROACH)
+[3]
+Bilangan dari 1 sampai 1000 yang habis dibagi 3: floor(1000 / 3) = 333
+Bilangan dari 1 sampai 100 yang habis dibagi 3: floor(100 / 3) = 33
+Bilangan dari 100 sampai 1000 yang habis dibagi 3: floor(1000 / 3) - floor(100 / 3) = 333 - 33 = 300
+
+[5]
+Bilangan dari 1 sampai 1000 yang habis dibagi 5: floor(1000 / 5) = 200
+Bilangan dari 1 sampai 100 yang habis dibagi 5: floor(100 / 5) = 20
+Bilangan dari 100 sampai 1000 yang habis dibagi 5: floor(1000 / 5) - floor(100 / 5) = 200 - 20 = 180
+
+[15]
+Bilangan dari 1 sampai 1000 yang habis dibagi 15: floor(1000 / 15) = 66
+Bilangan dari 1 sampai 100 yang habis dibagi 15: floor(100 / 15) = 6
+Bilangan dari 100 sampai 1000 yang habis dibagi 15: floor(1000 / 15) - floor(100 / 3) = 66 - 6 = 60
+
+[9]
+Bilangan dari 1 sampai 1000 yang habis dibagi 9: floor(1000 / 9) = 111
+Bilangan dari 1 sampai 100 yang habis dibagi 9: floor(100 / 9) = 11
+Bilangan dari 100 sampai 1000 yang habis dibagi 9: floor(1000 / 9) - floor(100 / 9) = 111 - 11 = 100
+
+Bilangan yang habis dibagi 3 atau habis dibagi 5, tetapi tidak habis dibagi 9 adalah
+
+300 + 180 - 60 - 100 = 320
+
+CORRECT APPROACH
+
+()
