@@ -57,6 +57,7 @@ int main() {
         cout << "masih berlaku v < b, nilai j: " << j << ", nilai j + 1: " << (j + 1) << ", nilai dp[j + 1]: " << dp[j + 1] << ", dan nilai dp[i]: " << dp[i] << endl;
         // If valid (val < b), add probability to dp[j + 1]
         dp[j + 1] = (dp[j + 1] + dp[i]) % MOD;
+        cout << "nilai j + 1: " << (j + 1) << ", dan nilai dp[j + 1] baru: " << dp[j + 1] << endl;
       }
     }
 
