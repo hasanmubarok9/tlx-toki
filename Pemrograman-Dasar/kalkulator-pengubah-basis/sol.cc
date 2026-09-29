@@ -18,7 +18,7 @@ int main() {
   cout << "nilai basis: " << b << ", dan nilai string: " << s << endl;
 
   int n = s.size();
-  cout << "nilai n: " << n << endl;
+  cout << "nilai n: " << n << endl << endl;
 
   // dp[i] stores the number of ways to truncate s[0...i - 1]
   vector<int> dp(n + 1, 0);
@@ -30,7 +30,7 @@ int main() {
 
     // case 1: substring started with '0'
     if (s[i] == '0') {
-      cout << "case 1, substring started with '0'\n";
+      cout << "masuk case 1, substring started with '0'\n";
       cout << "nilai dp[i]: " << dp[i] << ", dan nilai dp[i + 1]: " << dp[i + 1] << endl;
       // '0' can only stand alone as the digit 0
       if (0 < b) {
@@ -40,6 +40,7 @@ int main() {
 
     // case 2: substring started with digit '1' - '9'
     else {
+      cout << "masuk case 2\n";
       long long val = 0;
       for (int j = i; j < n; j++) {
         cout << "nilai j: " << j << ", dan nilai s[j]: " << s[j] << ", dan nilai val: " << val << endl;;
@@ -52,6 +53,7 @@ int main() {
           break;
         }
 
+        cout << "masih berlaku v < b, nilai j: " << j << ", nilai j + 1: " << (j + 1) << ", nilai dp[j + 1]: " << dp[j + 1] << ", dan nilai dp[i]: " << dp[i] << endl;
         // If valid (val < b), add probability to dp[j + 1]
         dp[j + 1] = (dp[j + 1] + dp[i]) % MOD;
       }

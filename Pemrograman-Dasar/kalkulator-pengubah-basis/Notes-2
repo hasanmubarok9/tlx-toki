@@ -23,4 +23,31 @@ The calculator displays each digit as:
 
 So the displayed string Y is actually a concatenation of decimal representation of the base-B digits.
 
-Therefore, our 
+Therefore, our problem become:
+`In how many ways we can split Y into pieces, where each piece represents one valid base-B digit?`
+
+Each valid split corresponds to exactly one X
+
+========================================================================
+B = 16
+Y = "1111"
+
+The important observation is that, in base 16, a digit can be:
+0, 1, 2, ..., 9, 10, 11, ..., 15
+
+and calculator displays:
+0..9 -> "0".."9"
+10 -> "10"
+11 -> "11"
+12 -> "12"
+...
+15 -> "15"
+
+So for our string "1111", a piece can be:
+"1"  -> 1   valid
+"11" -> 11  valid
+"111" -> 111 invalid
+"1111" -> 1111 invalid
+
+Therefore, we need to split "1111" into pieces of either length 1 or length 2.
+========================================================================
