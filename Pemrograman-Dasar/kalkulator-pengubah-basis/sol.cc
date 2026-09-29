@@ -50,6 +50,7 @@ int main() {
         // If the substring value exceeds or is equal to b, then
         // the longer truncation is definitely invalid (break)
         if (val >= b) {
+          cout << "invalid karena val >= b: " << val << endl;
           break;
         }
 

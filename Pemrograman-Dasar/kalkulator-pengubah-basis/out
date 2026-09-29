@@ -11,6 +11,7 @@ nilai val baru: 11
 masih berlaku v < b, nilai j: 1, nilai j + 1: 2, nilai dp[j + 1]: 0, dan nilai dp[i]: 1
 nilai j: 2, dan nilai s[j]: 1, dan nilai val: 11
 nilai val baru: 111
+invalid karena val >= b: 111
 akhir untuk i: 0, nilai dp: 1 1 1 0 0 
 
 nilai i: 1, dan nilai dp[i]: 1
@@ -23,6 +24,7 @@ nilai val baru: 11
 masih berlaku v < b, nilai j: 2, nilai j + 1: 3, nilai dp[j + 1]: 0, dan nilai dp[i]: 1
 nilai j: 3, dan nilai s[j]: 1, dan nilai val: 11
 nilai val baru: 111
+invalid karena val >= b: 111
 akhir untuk i: 1, nilai dp: 1 1 2 1 0 
 
 nilai i: 2, dan nilai dp[i]: 2
