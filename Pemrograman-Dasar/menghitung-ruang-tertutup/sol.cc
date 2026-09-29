@@ -69,7 +69,7 @@ int main() {
   int nroom = 0;
   for (int i = 1; i <= 3 * n; i++) {
     for (int j = 1; j <= 3 * m; j++) {
-      if (!grid[i][j] && visited[i][j]) {
+      if (!grid[i][j] && !visited[i][j]) {
         nroom++;
         floodfill(i, j, nn, nm);
       }
