@@ -51,3 +51,10 @@ So for our string "1111", a piece can be:
 
 Therefore, we need to split "1111" into pieces of either length 1 or length 2.
 ========================================================================
+
+dp[i] = number of ways to split the first i characters of Y
+
+so dp[0] = 1
+
+means there is exactly one way to split an empty string: do nothing.
+
