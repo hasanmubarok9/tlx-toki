@@ -1,0 +1,53 @@
+Grid 1
+1 4 5
+7 3 2
+8 9 6
+
+tombol A ditekan 2 kali
+putaran pertama
+7 1 5
+3 4 2
+8 9 6
+
+putaran kedua
+3 7 5
+4 1 2
+8 9 6
+
+tombol C ditekan 1 kali
+3 7 5
+4 9 1
+8 6 2
+
+Mengubah susunan grid 2 menjadi grid 1
+
+Grid 1
+1 4 5
+7 3 2
+8 9 6
+
+======================================
+Grid 2
+1 2 3
+4 5 6
+7 8 9
+
+tekan tombol D
+1 2 3
+7 4 6
+8 5 9
+
+tekan tombol C
+1 2 3
+7 5 4
+8 9 6
+
+tekan tombol B
+1 5 2
+7 4 3
+8 9 6
+
+tekan tombol B
+1 4 5
+7 3 2
+8 9 6

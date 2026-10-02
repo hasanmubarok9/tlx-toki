@@ -1,0 +1,17 @@
+10 Kandang dengan kapasitas maksimal 5 burung
+
+Berapa burung yang harus disediakan supaya dia dengan pasti mengatakan dengan yakin bahwa "Setidaknya pasti ada 3 kandang yang berisi 2 burung"?
+
+Kondisi paling sial
+- Kandang 1: 5 burung
+- Kandang 2: 5 burung
+- Kandang 3: 1
+- Kandang 4: 1
+- Kandang 5: 1
+- Kandang 6: 1
+- Kandang 7: 1
+- Kandang 8: 1
+- Kandang 9: 1
+- Kandang 10: 1
+
+jadi harus ada minimal (5 + 5 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1) + 1 = 18 + 1 = 19 burung.

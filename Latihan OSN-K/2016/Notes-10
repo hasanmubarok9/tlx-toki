@@ -1,0 +1,27 @@
+Jumlah binatang berkaki 1: x
+Jumlah binatang berkaki 3: y
+Jumlah binatang berkaki 5: z
+
+x + y + z = 52
+
+(88 - 3y) + y + z = 52
+2y - z = 36
+
+x + 3y = 88
+3y + 5z = 106
+
+
+3y + 5z = 106
+2y - z = 36
+10y - 5z = 180
+
+13y = 286
+y = 22
+
+x = 88 - 3y = 88 - 3(22) = 88 - 66 = 22
+
+z = 52 - x - y = 52 - 22 - 22 = 8
+
+jadi, x = 22, y = 22, z = 8
+
+29. Jumlah seluruh kaki yang ada: 22 + 3(22) + 5(8) = 22 + 66 + 40 = 128
