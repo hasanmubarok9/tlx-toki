@@ -15,7 +15,7 @@ int main() {
 
   for (char c: s) {
     if (c == 'P') p--;
-    else {
+    else if (c == 'O' || c == 'S' || c == 'N') {
       cnt++;
       if (c == 'O') mask |= 1;
       if (c == 'S') mask |= 2;
