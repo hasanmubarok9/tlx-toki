@@ -1,144 +1,88 @@
-banyaknya p: 4
+banyaknya p: 0
 nilai c: I
-nilai mask: 0, dan nilai p: 4
+nilai mask: 0, dan nilai p: 0
 separator=======
 
 nilai c: N
 masuk else, ketika nilai c: N
 nilai mask: 4
-nilai mask: 4, dan nilai p: 4
+nilai mask: 4, dan nilai p: 0
 separator=======
 
 nilai c: I
-nilai mask: 4, dan nilai p: 4
+nilai mask: 4, dan nilai p: 0
 separator=======
 
 nilai c: S
 masuk else, ketika nilai c: S
 nilai mask: 6
-nilai mask: 6, dan nilai p: 4
+nilai mask: 6, dan nilai p: 0
 separator=======
 
 nilai c: O
 masuk else, ketika nilai c: O
 nilai mask: 7
-nilai mask: 7, dan nilai p: 4
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 3, dan nilai cnt + p: 7
-nilai ans: 7
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
-nilai c: P
-masuk p
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 3, dan nilai cnt + p: 6
-nilai ans: 7
-
+nilai c: L
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: R
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 3, dan nilai cnt + p: 6
-nilai ans: 7
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: A
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 3, dan nilai cnt + p: 6
-nilai ans: 7
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: N
 masuk else, ketika nilai c: N
 nilai mask: 7
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 4, dan nilai cnt + p: 7
-nilai ans: 7
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: O
 masuk else, ketika nilai c: O
 nilai mask: 7
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 5, dan nilai cnt + p: 8
-nilai ans: 8
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: S
 masuk else, ketika nilai c: S
 nilai mask: 7
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 6, dan nilai cnt + p: 9
-nilai ans: 9
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: A
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 6, dan nilai cnt + p: 9
-nilai ans: 9
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: T
-nilai mask: 7, dan nilai p: 3
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 6, dan nilai cnt + p: 9
-nilai ans: 9
-
+nilai mask: 7, dan nilai p: 0
 separator=======
 
-nilai c: P
-masuk p
-nilai mask: 7, dan nilai p: 2
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 6, dan nilai cnt + p: 8
-nilai ans: 9
-
+nilai c: L
+nilai mask: 7, dan nilai p: 0
 separator=======
 
 nilai c: O
 masuk else, ketika nilai c: O
 nilai mask: 7
-nilai mask: 7, dan nilai p: 2
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 7, dan nilai cnt + p: 9
-nilai ans: 9
-
-separator=======
-
-nilai c: L
-nilai mask: 7, dan nilai p: 2
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 7, dan nilai cnt + p: 9
-nilai ans: 9
-
-separator=======
-
-nilai c: P
-masuk p
-nilai mask: 7, dan nilai p: 1
-ketika nilai mask adalah 7, dan nilai p > 0
-nilai cnt: 7, dan nilai cnt + p: 8
-nilai ans: 9
-
-separator=======
-
-nilai c: P
-masuk p
 nilai mask: 7, dan nilai p: 0
 separator=======
 
-9
+nilai c: L
+nilai mask: 7, dan nilai p: 0
+separator=======
+
+nilai c: L
+nilai mask: 7, dan nilai p: 0
+separator=======
+
+nilai c: L
+nilai mask: 7, dan nilai p: 0
+separator=======
+
+-1

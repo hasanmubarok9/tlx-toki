@@ -33,7 +33,7 @@ int main() {
 
     if (mask == 7 && p > 0) {
       cout << "ketika nilai mask adalah 7, dan nilai p > 0\n";
-      cout << "nilai cnt: " << cnt << ", dan nilai cnt + p: " << (cnt + p) << endl;
+      cout << "nilai cnt: " << cnt << ", nilai p: " << p << ", dan nilai cnt + p: " << (cnt + p) << endl;
       ans = max(ans, cnt + p);
       cout << "nilai ans: " << ans << endl << endl;
     }
