@@ -14,6 +14,7 @@ int main() {
   int mask = 0;
 
   for (char c: s) {
+    cout << "nilai c: " << c << endl;
     if (c == 'P') p--;
     else if (c == 'O' || c == 'S' || c == 'N') {
       cnt++;
