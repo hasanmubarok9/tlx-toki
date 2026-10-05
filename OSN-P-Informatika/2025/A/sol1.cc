@@ -37,6 +37,7 @@ int main() {
       ans = max(ans, cnt + p);
       cout << "nilai ans: " << ans << endl << endl;
     }
+    cout << "separator=======\n\n";
   }
 
   cout << ans << '\n';
