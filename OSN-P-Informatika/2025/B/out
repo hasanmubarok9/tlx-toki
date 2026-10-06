@@ -1,0 +1,43 @@
+nilai bs: 1, dan nilai ht: 100
+
+nilai m: 50
+nilai m / l: 50, nilai m / w: 50, dan nilai (m / l) * (m / w): 2500
+akhir while, nilai ht: 50, dan nilai bs: 1
+
+nilai bs: 1, dan nilai ht: 50
+
+nilai m: 25
+nilai m / l: 25, nilai m / w: 25, dan nilai (m / l) * (m / w): 625
+akhir while, nilai ht: 25, dan nilai bs: 1
+
+nilai bs: 1, dan nilai ht: 25
+
+nilai m: 13
+nilai m / l: 13, nilai m / w: 13, dan nilai (m / l) * (m / w): 169
+akhir while, nilai ht: 13, dan nilai bs: 1
+
+nilai bs: 1, dan nilai ht: 13
+
+nilai m: 7
+nilai m / l: 7, nilai m / w: 7, dan nilai (m / l) * (m / w): 49
+akhir while, nilai ht: 7, dan nilai bs: 1
+
+nilai bs: 1, dan nilai ht: 7
+
+nilai m: 4
+nilai m / l: 4, nilai m / w: 4, dan nilai (m / l) * (m / w): 16
+akhir while, nilai ht: 7, dan nilai bs: 5
+
+nilai bs: 5, dan nilai ht: 7
+
+nilai m: 6
+nilai m / l: 6, nilai m / w: 6, dan nilai (m / l) * (m / w): 36
+akhir while, nilai ht: 6, dan nilai bs: 5
+
+nilai bs: 5, dan nilai ht: 6
+
+nilai m: 5
+nilai m / l: 5, nilai m / w: 5, dan nilai (m / l) * (m / w): 25
+akhir while, nilai ht: 5, dan nilai bs: 5
+
+5
