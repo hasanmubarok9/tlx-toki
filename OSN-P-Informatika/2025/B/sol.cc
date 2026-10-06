@@ -10,7 +10,7 @@ int main() {
   cin >> n >> l >> w;
 
   // int bs = 1, ht = 2e9 + 5; // base and height;
-  int bs = 1, ht = 100; // debugging
+  int bs = 1, ht = 20; // debugging
 
   // binary search
   while (bs < ht) {
