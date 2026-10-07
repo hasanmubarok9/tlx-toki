@@ -1,18 +1,1 @@
-nilai n: 4, nilai l: 2, dan nilai w: 1
-
-nilai bs: 1, dan nilai ht: 10
-nilai m: 5
-nilai m / l: 2, nilai m / w: 5, dan nilai (m / l) * (m / w): 10, dan nilai n: 4
-akhir while, nilai bs: 1, dan nilai ht: 5
-
-nilai bs: 1, dan nilai ht: 5
-nilai m: 3
-nilai m / l: 1, nilai m / w: 3, dan nilai (m / l) * (m / w): 3, dan nilai n: 4
-akhir while, nilai bs: 4, dan nilai ht: 5
-
-nilai bs: 4, dan nilai ht: 5
-nilai m: 4
-nilai m / l: 2, nilai m / w: 4, dan nilai (m / l) * (m / w): 8, dan nilai n: 4
-akhir while, nilai bs: 4, dan nilai ht: 4
-
-4
+5
