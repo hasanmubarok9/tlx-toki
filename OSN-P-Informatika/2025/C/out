@@ -1,16 +1,16 @@
 nilai i: 2
-di dalam while, nilai n: 60, dan nilai i: 2
-akhir while, nilai p: 1, dan nilai n: 30
-di dalam while, nilai n: 30, dan nilai i: 2
-akhir while, nilai p: 2, dan nilai n: 15
-setelah while, nilai p: 2, dan nilai mv: 100
+di dalam while, nilai n: 18, dan nilai i: 2
+akhir while, nilai p: 1, dan nilai n: 9
+setelah while, nilai p: 1, dan nilai mv: 100
 akhir untuk i: 2
 
 nilai i: 3
-di dalam while, nilai n: 15, dan nilai i: 3
-akhir while, nilai p: 1, dan nilai n: 5
-setelah while, nilai p: 1, dan nilai mv: 2
+di dalam while, nilai n: 9, dan nilai i: 3
+akhir while, nilai p: 1, dan nilai n: 3
+di dalam while, nilai n: 3, dan nilai i: 3
+akhir while, nilai p: 2, dan nilai n: 1
+setelah while, nilai p: 2, dan nilai mv: 1
 akhir untuk i: 3
 
 nilai n: , dan nilai mv: 1
-3
+2

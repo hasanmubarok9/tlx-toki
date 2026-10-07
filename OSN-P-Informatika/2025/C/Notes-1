@@ -1,0 +1,15 @@
+The main idea is to transform the problem into a number of divisors problem
+
+1. What happens when we choose a prime p?
+
+Suppose Pak Dengklek chooses egg type p.
+
+Each package contains p x p = p^2 eggs, and costs p rupiah.
+
+with N rupiah, he can buy N / P packags, because p | N.
+
+Therefore, the total number of eggs is (N / P) * p^2 = Np.
+
+So, after buying type p, he has exactly Np eggs.
+
+
