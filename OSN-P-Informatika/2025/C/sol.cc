@@ -16,8 +16,10 @@ int main() {
     if (n % i > 0) continue;
     int p = 0;
     while (n % i == 0) {
+      cout << "di dalam while, nilai n: " << n << ", dan nilai i: " << i << endl;
       p += 1;
       n /= i;
+      cout << "akhir while, nilai p: " << p << ", dan nilai n: " << n << endl;
     }
     cout << "setelah while, nilai p: " << p << ", dan nilai mv: " << mv << endl;
     if (p < mv) {
