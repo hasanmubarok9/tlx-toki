@@ -9,8 +9,8 @@ int main() {
   int n;
   cin >> n;
 
-  // int mv = 1e18, mk = -1;
-  int mv = 100, mk = -1;
+  long long mv = 1e18; // minimum value found so far
+  int mk = -1; // prime corresponding to that minimum value
   for (int i = 2; i * i <= n; i++) { // i is the candidate prime factor
     cout << "nilai i: " << i << endl << endl;
     if (n % i > 0) continue;
@@ -21,7 +21,7 @@ int main() {
       n /= i;
       cout << "akhir while, nilai p: " << p << ", dan nilai n: " << n << endl;
     }
-    cout << "setelah while, nilai p: " << p << ", dan nilai mv: " << mv << endl << endl;
+    cout << "setelah while, nilai p: " << p << ", nilai mv: " << mv << ", dan nilai mk: " << mk << endl << endl;
     if (p < mv) { // if the prime's exponent is smaller than the best exponent found so far, make this prime the answer
       mv = p;
       mk = i;
@@ -30,7 +30,7 @@ int main() {
     cout << "akhir untuk i: " << i << endl << endl;
   }
 
-  cout << "nilai n: " << ", dan nilai mv: " << mv << endl;
+  cout << "nilai n: " << n << ", dan nilai mv: " << mv << endl;
   if (n > 1 && mv > 1) {
     mk = n;
   }
